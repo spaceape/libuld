@@ -5,17 +5,17 @@ set(NAME uld)
 set(PREFIX)
 
 add_definitions(
-  ${GLOBAL_DEFS}
+  ${HOST_DEFS}
 )
 
 include_directories(
   ${CMAKE_CURRENT_SOURCE_DIR}
-  ${GLOBAL_LIBRARY_DIR}/fat
-  ${GLOBAL_LIBRARY_DIR}/fat/ff14a
-  ${GLOBAL_LIBRARY_DIR}/fat/sd_driver
+  ${HOST_LIBRARY_DIR}/fat
+  ${HOST_LIBRARY_DIR}/fat/ff14a
+  ${HOST_LIBRARY_DIR}/fat/sd_driver
 )
 
-set(ULD_SDK_DIR ${GLOBAL_SDK_DIR}/${NAME})
+set(ULD_SDK_DIR ${HOST_SDK_DIR}/${NAME})
 
 set(inc
   config.h error.h
